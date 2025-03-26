@@ -30,20 +30,19 @@ export class CalculatorComponent {
   // }
 
   handleClick(key: string) {
-    console.log(key);
+    this.calculatorService.contructNumber(key);
   }
 
   handleKeyboardEvent(event: KeyboardEvent) {
-    const key = event.key
-
+    
     const keyEquivalents: Record<string, string> = {
       Escape: 'C',
       Clear: 'C',
-      '*': 'x',
-      '/': '/',
+      x: '*',
       Enter: '=',
     }
-
+    
+    const key = event.key
     const keyValue = keyEquivalents[key] ?? key
 
     this.handleClick(keyValue);

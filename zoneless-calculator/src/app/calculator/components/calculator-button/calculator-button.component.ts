@@ -42,10 +42,9 @@ export class CalculatorButtonComponent {
     if (!this.contentValue()?.nativeElement.innerText) {
       return;
     }
-    const value = this.contentValue()?.nativeElement.innerText;
+    const value = this.contentValue()!.nativeElement.innerText;
 
-    console.log(value?.trim())
-
+    this.onClick.emit(value)
   }
 
   public keyboardPressedStyle(key: string) {
