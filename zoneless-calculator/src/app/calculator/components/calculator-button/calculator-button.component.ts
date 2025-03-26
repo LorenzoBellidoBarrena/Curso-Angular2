@@ -43,7 +43,7 @@ export class CalculatorButtonComponent {
       return;
     }
     const value = this.contentValue()!.nativeElement.innerText;
-
+    console.log('onclick',value)
     this.onClick.emit(value)
   }
 

@@ -126,6 +126,9 @@ export class CalculatorService {
         }else{
           result = number1 / number2
         }
+        console.log('div',number1)
+        console.log('div',number2)
+        console.log('div',result)
         break;
     }
 
