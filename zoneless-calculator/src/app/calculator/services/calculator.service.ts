@@ -13,14 +13,12 @@ export class CalculatorService {
   public lastOperator = signal('+');
 
   public contructNumber(value: string) {
-    console.log('service', value)
     // Validar input
     if (![...numbers, ...operators, ...especialOperators].includes(value)) {
       console.log('invalid input', value)
       return;
     }
     if (value === '=') {
-      console.log('Calcular resultado')
       this.calculateResult()
     }
 
