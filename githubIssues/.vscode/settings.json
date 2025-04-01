@@ -1,0 +1,11 @@
+{
+    "exportall.config.relExclusion": [
+        "/src/app/modules/issues/actions/get-labels.ts"
+    ],
+    "angular-schematics.schematicsDefaultOptions": {
+        "angular-*": {
+            "externalTemplate": true,
+            "skipStyle": true
+        }
+    }
+}

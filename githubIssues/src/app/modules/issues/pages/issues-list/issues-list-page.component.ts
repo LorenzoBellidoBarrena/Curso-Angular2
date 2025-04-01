@@ -1,9 +1,18 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+import { IssuesService } from '../../services/issues.service';
+import { LabelsSelectorComponent } from '../../components/labels-selector/labels-selector.component';
+import { IssueItemComponent } from "../../components/issue-item/issue-item.component";
 
 @Component({
   selector: 'app-issues-list-page',
   standalone: true,
-  imports: [],
+  imports: [LabelsSelectorComponent, IssueItemComponent],
   templateUrl: './issues-list-page.component.html',
 })
-export default class IssuesListPageComponent { }
+export default class IssuesListPageComponent {
+
+  inssuesServices = inject(IssuesService)
+
+  get labelsQuery() { return this.inssuesServices.labelsQuery }
+  get issuesQuery() { return this.inssuesServices.issuesQuery }
+ }
