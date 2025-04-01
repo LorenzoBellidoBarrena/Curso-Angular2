@@ -22,7 +22,10 @@ export default class IssuePageComponent {
     )
   );
 
+
+
   public issueQuery = this.issueService.issueQuery
 
+  public issueCommentsQuery = this.issueService.issueCommentsQuery
 
  }
