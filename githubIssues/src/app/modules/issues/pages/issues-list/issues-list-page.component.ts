@@ -24,7 +24,7 @@ export default class IssuesListPageComponent {
       closed: State.Closed
     }[newState] ?? State.All
 
-    this.inssuesServices.showIssuesByStet(state)
+    this.inssuesServices.showIssuesByState(state)
   }
 
 }

@@ -6,7 +6,6 @@ const BASE_URL = environment.baseUrl
 const GITHUB_TOKEN = environment.gitHubToken
 
 export const getIssueByNumber = async(issueNumber:string) => {
-    await sleep(1500)
     try{
 
         const resp = await fetch(`${BASE_URL}/issues/${issueNumber}`, {
@@ -23,6 +22,6 @@ export const getIssueByNumber = async(issueNumber:string) => {
         return issue
 
     }catch(e){
-        throw "Cant't load issue"
+        throw `Cant't load issue: ${issueNumber}`
     }
 }

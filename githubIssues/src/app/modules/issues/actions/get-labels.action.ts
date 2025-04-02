@@ -6,7 +6,7 @@ const BASE_URL = environment.baseUrl
 const GITHUB_TOKEN = environment.gitHubToken
 
 export const getLabels = async() => {
-    await sleep(1500)
+    // await sleep(1500)
     try{
 
         const resp = await fetch(`${BASE_URL}/labels`, {
