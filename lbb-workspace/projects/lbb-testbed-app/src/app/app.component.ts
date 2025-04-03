@@ -5,7 +5,7 @@ import {LbbSideMenuComponent, TitleColor} from 'lbb-side-menu'
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, LbbSideMenuComponent],
+  imports: [ LbbSideMenuComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
