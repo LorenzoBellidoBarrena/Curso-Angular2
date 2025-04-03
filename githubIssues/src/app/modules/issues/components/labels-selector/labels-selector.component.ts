@@ -5,6 +5,7 @@ import { IssuesService } from '../../services/issues.service';
 
 @Component({
   selector: 'issues-labels-selector',
+  standalone:true,
   imports: [NgStyle],
   templateUrl: './labels-selector.component.html',
 })

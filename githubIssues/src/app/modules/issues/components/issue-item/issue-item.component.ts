@@ -6,6 +6,7 @@ import { IssueService } from '../../services/issue.service';
 
 @Component({
   selector: 'issue-item',
+  standalone: true,
   imports: [RouterLink, NgStyle],
   templateUrl: './issue-item.component.html',
 })
