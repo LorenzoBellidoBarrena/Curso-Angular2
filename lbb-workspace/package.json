@@ -7,7 +7,11 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "lbb-side-menu:build": "ng build lbb-side-menu",
+    "lbb-side-menu:lint": "ng lint lbb-side-menu",
+    "lbb-side-menu:test": "ng test lbb-side-menu --no-watch --no-progress --browsers=ChromeHeadless",
+    "lbb-side-menu:publish": "npm run lbb-side-menu:test && npm run lbb-side-menu:build && npm publish dist/lbb-side-menu/"
   },
   "private": true,
   "dependencies": {
