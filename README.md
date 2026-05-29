@@ -20,7 +20,7 @@ Curso de referencia: https://www.udemy.com/course/angular-pro-siguiente-nivel/
 
 ![Listado de issues de GitHub](screenshots/github-issues-list.png)
 
-![Detalle de issue de GitHub](screenshots/github-issues-detail.png)
+![Detalle de issue de GitHub](screenshots/githubissues.png)
 
 ### `lbb-workspace`
 
