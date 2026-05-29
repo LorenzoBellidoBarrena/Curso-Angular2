@@ -1,59 +1,80 @@
-# LbbWorkspace
+# LBB Workspace
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.5.
+Workspace Angular orientado a crear y probar la librería `lbb-side-menu`. Incluye configuración de librería, aplicación de testbed en `angular.json`, linting, tests y scripts de empaquetado/publicación.
 
-## Development server
+## 🚀 Demo
 
-To start a local development server, run:
+> Actualmente no hay una demo pública disponible. El proyecto puede ejecutarse en local siguiendo las instrucciones de instalación.
 
-```bash
-ng serve
+## 📸 Capturas
+
+> Pendiente de añadir capturas de pantalla de la aplicación.
+
+## 🧩 Funcionalidades
+
+* Librería Angular `lbb-side-menu`.
+* Componente standalone de menú lateral.
+* Inputs para autenticación y color del título.
+* Outputs de login y logout.
+* Configuración con `ng-packagr`.
+* Scripts específicos de build, lint, test y publish.
+
+## 🛠️ Tecnologías utilizadas
+
+* Angular 19
+* TypeScript
+* Angular Router
+* ng-packagr
+* angular-eslint
+* Karma/Jasmine
+
+## 🏗️ Arquitectura y estructura
+
+```text
+lbb-workspace/
+├── projects/
+│   ├── lbb-side-menu/
+│   └── lbb-testbed-app/
+├── angular.json
+├── package.json
+└── README.md
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## ⚙️ Instalación y ejecución
 
 ```bash
-ng generate component component-name
+npm install
+npm start
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## 🧪 Tests
 
 ```bash
-ng generate --help
+npm test
+npm run lbb-side-menu:test
 ```
 
-## Building
-
-To build the project run:
+## 📦 Build o despliegue
 
 ```bash
-ng build
+npm run lbb-side-menu:build
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+Publicación configurada:
 
 ```bash
-ng test
+npm run lbb-side-menu:publish
 ```
 
-## Running end-to-end tests
+## 📌 Estado del proyecto
 
-For end-to-end (e2e) testing, run:
+Práctica académica de creación de librerías Angular. Pendiente de documentar API pública y ejemplos de uso.
 
-```bash
-ng e2e
-```
+## 👨‍💻 Autor
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Lorenzo Bellido Barrena
 
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+* Portfolio: https://lorenzo-bellido.vercel.app/
+* LinkedIn: https://www.linkedin.com/in/lorenzo-bellido-barrena/
+* GitHub: https://github.com/LorenzoBellidoBarrena
+* Email: [lorenzobeba2@gmail.com](mailto:lorenzobeba2@gmail.com)

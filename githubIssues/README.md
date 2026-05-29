@@ -1,59 +1,88 @@
-# GithubIssues
+# GitHub Issues
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.5.
+Aplicación Angular para consultar issues del repositorio `angular/angular` usando la GitHub REST API. Permite listar issues, filtrar por estado y etiquetas, y consultar el detalle con comentarios.
 
-## Development server
+## 🚀 Demo
 
-To start a local development server, run:
+> Actualmente no hay una demo pública disponible. El proyecto puede ejecutarse en local siguiendo las instrucciones de instalación.
 
-```bash
-ng serve
+## 📸 Capturas
+
+> Pendiente de añadir capturas de pantalla de la aplicación.
+
+## 🧩 Funcionalidades
+
+* Listado de issues desde GitHub.
+* Filtro por estado: todos, abiertos y cerrados.
+* Carga y selección de labels.
+* Página de detalle por número de issue.
+* Consulta de comentarios del issue.
+* Estado remoto con `@tanstack/angular-query-experimental`.
+* Renderizado de Markdown con `ngx-markdown`.
+
+## 🛠️ Tecnologías utilizadas
+
+* Angular 19
+* TypeScript
+* Angular Router
+* Angular Query
+* ngx-markdown
+* Tailwind CSS
+* GitHub REST API
+* Karma/Jasmine
+
+## 🏗️ Arquitectura y estructura
+
+```text
+githubIssues/
+├── src/app/modules/issues/
+│   ├── actions/
+│   ├── components/
+│   ├── interfaces/
+│   ├── pages/
+│   └── services/
+├── src/environments/
+├── package.json
+└── angular.json
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## ⚙️ Instalación y ejecución
 
 ```bash
-ng generate component component-name
+npm install
+npm start
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## 🧪 Tests
 
 ```bash
-ng generate --help
+npm test
 ```
 
-## Building
-
-To build the project run:
+## 📦 Build o despliegue
 
 ```bash
-ng build
+npm run build
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## 🔐 Variables de entorno
 
-## Running unit tests
+Los archivos `src/environments/environment.ts` y `src/environments/environment.development.ts` definen:
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+* `baseUrl`: endpoint base de GitHub.
+* `gitHubToken`: token opcional. Está vacío para no publicar credenciales.
 
-```bash
-ng test
-```
+Se incluye `src/environments/environment.example.ts` como referencia.
 
-## Running end-to-end tests
+## 📌 Estado del proyecto
 
-For end-to-end (e2e) testing, run:
+Práctica académica funcional. Pendiente de capturas y de revisar una estrategia segura si se decide usar token de GitHub.
 
-```bash
-ng e2e
-```
+## 👨‍💻 Autor
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Lorenzo Bellido Barrena
 
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+* Portfolio: https://lorenzo-bellido.vercel.app/
+* LinkedIn: https://www.linkedin.com/in/lorenzo-bellido-barrena/
+* GitHub: https://github.com/LorenzoBellidoBarrena
+* Email: [lorenzobeba2@gmail.com](mailto:lorenzobeba2@gmail.com)

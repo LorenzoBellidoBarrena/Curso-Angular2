@@ -1,63 +1,72 @@
-# LbbSideMenu
+# LBB Side Menu
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.0.
+Librería Angular que expone un componente standalone de menú lateral con navegación, estado de autenticación y acciones de login/logout.
 
-## Code scaffolding
+## 🚀 Demo
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+> Actualmente no hay una demo pública disponible. El componente puede probarse desde el workspace padre.
 
-```bash
-ng generate component component-name
+## 📸 Capturas
+
+> Pendiente de añadir capturas de pantalla del componente.
+
+## 🧩 Funcionalidades
+
+* Componente `lib-lbb-side-menu`.
+* Input `isAuthenticated`.
+* Input `titleColor` basado en el enum `TitleColor`.
+* Outputs `onSignIn` y `onSignOut`.
+* Plantilla con enlaces de navegación y acciones de autenticación.
+
+## 🛠️ Tecnologías utilizadas
+
+* Angular 19
+* TypeScript
+* Angular Router
+* ng-packagr
+
+## 🏗️ Arquitectura y estructura
+
+```text
+projects/lbb-side-menu/
+├── src/lib/
+│   ├── lbb-side-menu.component.ts
+│   ├── lbb-side-menu.component.html
+│   └── lbb-side-menu.component.spec.ts
+├── ng-package.json
+└── package.json
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## ⚙️ Instalación y ejecución
+
+Desde `lbb-workspace/`:
 
 ```bash
-ng generate --help
+npm install
+npm run lbb-side-menu:build
 ```
 
-## Building
-
-To build the library, run:
+## 🧪 Tests
 
 ```bash
-ng build lbb-side-menu
+npm run lbb-side-menu:test
 ```
 
-This command will compile your project, and the build artifacts will be placed in the `dist/` directory.
-
-### Publishing the Library
-
-Once the project is built, you can publish your library by following these steps:
-
-1. Navigate to the `dist` directory:
-   ```bash
-   cd dist/lbb-side-menu
-   ```
-
-2. Run the `npm publish` command to publish your library to the npm registry:
-   ```bash
-   npm publish
-   ```
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## 📦 Build o despliegue
 
 ```bash
-ng test
+npm run lbb-side-menu:build
 ```
 
-## Running end-to-end tests
+## 📌 Estado del proyecto
 
-For end-to-end (e2e) testing, run:
+Librería de práctica. Pendiente de publicar ejemplos de integración y documentación de inputs/outputs.
 
-```bash
-ng e2e
-```
+## 👨‍💻 Autor
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Lorenzo Bellido Barrena
 
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+* Portfolio: https://lorenzo-bellido.vercel.app/
+* LinkedIn: https://www.linkedin.com/in/lorenzo-bellido-barrena/
+* GitHub: https://github.com/LorenzoBellidoBarrena
+* Email: [lorenzobeba2@gmail.com](mailto:lorenzobeba2@gmail.com)

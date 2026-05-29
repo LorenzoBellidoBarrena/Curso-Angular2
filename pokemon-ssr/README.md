@@ -1,27 +1,80 @@
-# PokemonSsr
+# Pokémon SSR
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.15.
+Aplicación Angular con SSR para consultar Pokémon desde PokeAPI. Esta copia forma parte del repositorio de prácticas `Curso-Angular2` y contiene listado, detalle, metadatos SEO y prerender de rutas.
 
-## Development server
+## 🚀 Demo
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+> Actualmente no hay una demo pública disponible. El proyecto puede ejecutarse en local siguiendo las instrucciones de instalación.
 
-## Code scaffolding
+## 📸 Capturas
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+> Pendiente de añadir capturas de pantalla de la aplicación.
 
-## Build
+## 🧩 Funcionalidades
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+* Listado paginado de Pokémon.
+* Detalle de Pokémon por ID o nombre.
+* Consumo de PokeAPI.
+* Imágenes oficiales de Pokémon.
+* Angular SSR con Express.
+* Script de prerender de rutas.
+* Metadatos SEO/Open Graph en detalle.
+* Tests configurados con Chrome Headless.
 
-## Running unit tests
+## 🛠️ Tecnologías utilizadas
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+* Angular 18
+* TypeScript
+* Angular SSR
+* Express
+* RxJS
+* Tailwind CSS
+* PokeAPI
+* Karma/Jasmine
 
-## Running end-to-end tests
+## 🏗️ Arquitectura y estructura
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```text
+pokemon-ssr/
+├── scripts/
+├── src/app/
+│   ├── pages/
+│   ├── pokemons/
+│   └── shared/
+├── server.ts
+├── package.json
+└── angular.json
+```
 
-## Further help
+## ⚙️ Instalación y ejecución
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+```bash
+npm install
+npm start
+```
+
+## 🧪 Tests
+
+```bash
+npm test
+```
+
+## 📦 Build o despliegue
+
+```bash
+npm run build
+npm run serve:ssr:pokemon-ssr
+```
+
+## 📌 Estado del proyecto
+
+Demo técnica/académica. Pendiente de capturas y documentación de rutas prerenderizadas.
+
+## 👨‍💻 Autor
+
+Lorenzo Bellido Barrena
+
+* Portfolio: https://lorenzo-bellido.vercel.app/
+* LinkedIn: https://www.linkedin.com/in/lorenzo-bellido-barrena/
+* GitHub: https://github.com/LorenzoBellidoBarrena
+* Email: [lorenzobeba2@gmail.com](mailto:lorenzobeba2@gmail.com)

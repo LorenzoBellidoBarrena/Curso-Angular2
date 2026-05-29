@@ -1,27 +1,80 @@
-# ZonelessCalculator
+# Zoneless Calculator
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.15.
+Calculadora desarrollada con Angular usando Signals y detección de cambios experimental sin Zone.js. El proyecto sirve como práctica de estado reactivo, componentes standalone y entrada por teclado.
 
-## Development server
+## 🚀 Demo
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+> Actualmente no hay una demo pública disponible. El proyecto puede ejecutarse en local siguiendo las instrucciones de instalación.
 
-## Code scaffolding
+## 📸 Capturas
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+> Pendiente de añadir capturas de pantalla de la aplicación.
 
-## Build
+## 🧩 Funcionalidades
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+* Operaciones básicas: suma, resta, multiplicación y división.
+* Entrada por botones de la interfaz.
+* Entrada mediante teclado físico.
+* Botón de limpiar (`C`) y borrado con `Backspace`.
+* Cambio de signo (`+/-`).
+* Manejo de decimales.
+* Estado con Angular Signals.
+* `provideExperimentalZonelessChangeDetection`.
+* Tests configurados y script de coverage.
 
-## Running unit tests
+## 🛠️ Tecnologías utilizadas
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+* Angular 18
+* TypeScript
+* Angular Signals
+* Angular Router
+* Tailwind CSS
+* Karma/Jasmine
 
-## Running end-to-end tests
+## 🏗️ Arquitectura y estructura
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```text
+zoneless-calculator/
+├── src/app/
+│   ├── calculator/
+│   │   ├── components/
+│   │   ├── services/
+│   │   └── views/
+│   ├── app.config.ts
+│   └── app.routes.ts
+├── package.json
+└── angular.json
+```
 
-## Further help
+## ⚙️ Instalación y ejecución
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+```bash
+npm install
+npm start
+```
+
+## 🧪 Tests
+
+```bash
+npm test
+npm run test:coverage
+```
+
+## 📦 Build o despliegue
+
+```bash
+npm run build
+```
+
+## 📌 Estado del proyecto
+
+Práctica académica funcional. Pendiente de capturas y mejora de casos borde de cálculo.
+
+## 👨‍💻 Autor
+
+Lorenzo Bellido Barrena
+
+* Portfolio: https://lorenzo-bellido.vercel.app/
+* LinkedIn: https://www.linkedin.com/in/lorenzo-bellido-barrena/
+* GitHub: https://github.com/LorenzoBellidoBarrena
+* Email: [lorenzobeba2@gmail.com](mailto:lorenzobeba2@gmail.com)
