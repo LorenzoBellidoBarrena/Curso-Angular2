@@ -10,7 +10,33 @@ Curso de referencia: https://www.udemy.com/course/angular-pro-siguiente-nivel/
 
 ## 📸 Capturas
 
-> Pendiente de añadir capturas de pantalla de la aplicación.
+### `company-app`
+
+![Dashboard de company-app](screenshots/company-app-home.png)
+
+![Vista de proyectos de company-app](screenshots/company-app-projects.png)
+
+### `githubIssues`
+
+![Listado de issues de GitHub](screenshots/github-issues-list.png)
+
+![Detalle de issue de GitHub](screenshots/github-issues-detail.png)
+
+### `lbb-workspace`
+
+![Aplicación de pruebas de lbb-side-menu](screenshots/lbb-workspace-testbed.png)
+
+### `pokemon-ssr`
+
+![Página informativa de Pokémon SSR](screenshots/pokemon-ssr-about.png)
+
+![Listado de Pokémon en Pokémon SSR](screenshots/pokemon-ssr-list.png)
+
+![Detalle de Pokémon en Pokémon SSR](screenshots/pokemon-ssr-detail.png)
+
+### `zoneless-calculator`
+
+![Calculadora zoneless](screenshots/zoneless-calculator.png)
 
 ## 🧩 Funcionalidades
 
